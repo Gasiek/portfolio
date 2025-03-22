@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "baseUrl": ".",
+    "module": "ESNext",
+    "skipLibCheck": true,
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "allowSyntheticDefaultImports": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "forceConsistentCasingInFileNames": true,
+    "paths": {
+      "@Assets/*": ["src/assets/*"],
+      "@Pages/*": ["src/pages/*"],
+      "@Context/*": ["src/context/*"],
+      "@Utils/*": ["src/utils/*"],
+      "@Templates/*": ["src/templates/*"]
+    }
+  },
+  "include": ["src", "./.eslintrc.cjs"],
+  "exclude": ["**node_modules", "**/.*/", "build"],
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ],
+  "files": ["./src/utils/styles/styled.d.ts"]
+}

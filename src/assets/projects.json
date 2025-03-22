@@ -1,0 +1,53 @@
+[
+  {
+    "id": "astroflap",
+    "title": "Astroflap",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "WebGL"
+    ],
+    "description": "Astroflap is a classic arcade game in which the player takes on the role of an astronaut exploring caves on an unknown planet.",
+    "detailedDescription": "Astroflap is a classic arcade game in which the player takes on the role of an astronaut exploring caves on an unknown planet using a jet pack. Designed to be fun as well as challenging. Explore caves, collect diamonds. Perform stunts and avoid obstacles.",
+    "gameLink": "https://oakgames.it/games/astroflap/"
+  },
+  {
+    "id": "foxrunner",
+    "title": "Fox Runner",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "WebGL"
+    ],
+    "description": "Fox Runner is a 3D platformer where the goal is to travel as far as possible, avoiding obstacles and collecting extra time by jumping over gates.",
+    "detailedDescription": "Fox runner is a platform game with 3D graphics, where the player's goal is to travel as much distance as possible. During gameplay, the player has to avoid obstacles and collect extra time by jumping over gates. The game engine generates a new route with each playthrough, making the game a completely new experience each time!",
+    "gameLink": "https://oakgames.it/games/foxrunner/"
+  },
+  {
+    "id": "alien-defense",
+    "title": "Alien Defense",
+    "technologies": [
+      "Unity",
+      "C#",
+      "VR"
+    ],
+    "description": "Alien Defence is a sci-fi arcade shooter where you battle waves of alien invaders to save humanity. Inspired by \"Tower Defense\" games, it offers exciting, story-driven missions.",
+    "detailedDescription": "The gameplay in Alien Defence aims to maintain the classic physicality of shooting in an arcade game. A Science Fiction themed game in which you travel through the galaxy, fight ruthless enemies and uncover dark secrets to save all of humanity. With a fascinating story and exciting missions, this game will draw you in from the very beginning. The gameplay is easy to learn and provides entertainment for hours. It is inspired by \"Tower Defense\" type games, where your task is to defend your planet from waves of invaders from outer space. ",
+    "gameLink": "https://www.meta.com/experiences/7935548316518766/"
+  },
+  {
+    "id": "vr-juggling-simulator",
+    "title": "VR Juggling Simulator",
+    "technologies": [
+      "Unity",
+      "C#",
+      "VR",
+      "Meta Quest 2"
+    ],
+    "description": "VR Juggling Simulator helps users learn juggling with realistic physics, adjustable difficulty, and visual/audio guidance. It features slow motion and instant ball resets for a more engaging and accessible training experience.",
+    "detailedDescription": "VR Juggling Simulator is designed to teach juggling using realistic physics for accurate ball trajectories and collisions. It features adjustable difficulty levels, a progression system, and intelligent guidance with visual and audio cues to improve timing and positioning. The game includes a slow-motion mode for detailed analysis and an instant ball reset feature for continuous practice. Developed as part of a Master's thesis, the simulator was used in a study comparing VR and real-world training, showing that VR enhances engagement and builds foundational skills, even if initial real-world performance transfer is limited.",
+    "gameLink": ""
+  }
+]
