@@ -11,3 +11,9 @@ export const ProjectsContainer = styled.div`
     margin-top: 2em;
     justify-items: center;
 `;
+
+export const CenteredHeader = styled.h1`
+    margin: 64px 0 16px;
+    text-align: center;
+    font-size: 64px;
+`;

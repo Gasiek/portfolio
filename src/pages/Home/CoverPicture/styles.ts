@@ -1,10 +1,9 @@
 import { styled } from "styled-components";
 
 export const Container = styled.div<{ bgimage: string }>`
-  height: calc(100vh);
+  height: calc(100vh - 100px);
   background-image: url(${(props) => props.bgimage});
   background-size: cover;
-  background-position: center;
   transition: background-image 1s ease-in-out; // Smooth transition effect
   display: flex;
   align-items: center;
@@ -12,4 +11,5 @@ export const Container = styled.div<{ bgimage: string }>`
   color: white;
   font-size: 2rem;
   font-weight: bold;
+  margin-top: 100px;
 `;

@@ -1,11 +1,12 @@
 import projects from "@Assets/projects.json";
 import ProjectTile from "./ProjectTile";
-import { Container, ProjectsContainer } from "./styles";
-import CoverPhoto from "./CoverPhoto";
+import { CenteredHeader, Container, ProjectsContainer } from "./styles";
+import CoverPicture from "./CoverPicture";
 
 const Home = () => (
   <Container>
-    <CoverPhoto />
+    <CoverPicture />
+    <CenteredHeader>Projects</CenteredHeader>
     <ProjectsContainer>
       {projects.map((project) => (
         <ProjectTile key={project.id} project={project} />

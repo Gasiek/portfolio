@@ -3,11 +3,13 @@ import image1 from "@Assets/projectsData/alien-defense/alien-defense.png";
 import image2 from "@Assets/projectsData/once-upon-a-conquest/once-upon-a-conquest-5.png";
 import image3 from "@Assets/projectsData/astroflap/astroflap-2.png";
 import image4 from "@Assets/projectsData/vr-juggling-simulator/vr-juggling-simulator-1.png";
+import coverPicture from "@Assets/images/cover-picture.jpg";
 import { Container } from "./styles";
 
-const images = [image1, image2, image3, image4];
+const images = [coverPicture];
+// const images = [image1, image2, image3, image4];
 
-const CoverPhoto = () => {
+const CoverPicture = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -22,4 +24,4 @@ const CoverPhoto = () => {
     )
 }
 
-export default CoverPhoto;
+export default CoverPicture;
