@@ -49,5 +49,29 @@
     "description": "VR Juggling Simulator helps users learn juggling with realistic physics, adjustable difficulty, and visual/audio guidance. It features slow motion and instant ball resets for a more engaging and accessible training experience.",
     "detailedDescription": "VR Juggling Simulator is designed to teach juggling using realistic physics for accurate ball trajectories and collisions. It features adjustable difficulty levels, a progression system, and intelligent guidance with visual and audio cues to improve timing and positioning. The game includes a slow-motion mode for detailed analysis and an instant ball reset feature for continuous practice. Developed as part of a Master's thesis, the simulator was used in a study comparing VR and real-world training, showing that VR enhances engagement and builds foundational skills, even if initial real-world performance transfer is limited.",
     "gameLink": ""
+  },
+  {
+    "id": "once-upon-a-conquest",
+    "title": "Once Upon a Conquest",
+    "technologies": [
+      "Unity",
+      "C#"
+    ],
+    "description": "A hack-and-slash platformer where you play as the Overlord, wreaking havoc on a peaceful kingdom. It features destructible environments, dynamic combat, and Unity's New Input System.",
+    "detailedDescription": "A narrative-driven hack-and-slash platformer where players control the Overlord, destroying a peaceful kingdom with dynamic combat and destructible environments. The game utilizes Unity’s New Input System for seamless gamepad and keyboard support, with advanced AI that includes enemy behaviors like patrolling, fear responses, and strategic attacks. Destructible environments are implemented with multiple levels of destruction, enhancing the immersive experience, while intuitive controls and responsive animations provide fluid combat flow and a polished user experience. The game’s technical design focuses on creating an engaging and immersive world through robust mechanics and high-performance gameplay.",
+    "gameLink": "https://dadiu.itch.io/once-upon-a-conquest"
+  },
+  {
+    "id": "vr-fire-safety-training-simulation",
+    "title": "VR fire safety training simulation",
+    "technologies": [
+      "Unity",
+      "C#",
+      "VR",
+      "Meta Quest 2"
+    ],
+    "description": "The VR fire safety simulation lets users practice realistic fire-extinguishing actions in an immersive environment. Built with Unity and C#, it tracks performance and provides feedback to improve fire safety skills.",
+    "detailedDescription": "The VR fire safety training simulation offers an interactive and immersive experience, where users can perform realistic actions like grabbing a fire extinguisher, removing the safety pin, and extinguishing fires in a simulated room environment. Built using Unity and C#, the simulation incorporates performance tracking to monitor metrics such as task completion time and extinguisher usage, providing valuable insights into user efficiency. Detailed post-training feedback reports help users assess and improve their fire safety skills, while the immersive design ensures high engagement and practical learning. The project leverages VR interaction design and performance tracking systems to create an effective and engaging training tool.",
+    "gameLink": ""
   }
 ]

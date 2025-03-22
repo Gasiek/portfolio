@@ -1,4 +1,4 @@
-const images = import.meta.glob("@Assets/projectsData/*/*.png", { eager: true }) as Record<string, { default: string }>;
+const images = import.meta.glob("@Assets/projectsData/*/*.{png,jpg}", { eager: true }) as Record<string, { default: string }>;
 const videos = import.meta.glob("@Assets/projectsData/*/*.mp4", { eager: true }) as Record<string, { default: string }>;
 const gifs = import.meta.glob("@Assets/projectsData/*/*.gif", { eager: true }) as Record<string, { default: string }>;
 
