@@ -1,6 +1,5 @@
 import projectsData from '@Assets/projects.json';
 import { useEffect, useState } from 'react';
-import { useSearchParams } from 'react-router-dom';
 import ProjectTile from './ProjectTile';
 import { CenteredHeader, PlatformLink, PlatformsContainer, ProjectsContainer } from './styles';
 
