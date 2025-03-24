@@ -1,7 +1,18 @@
-import { useParams } from 'react-router-dom';
 import projects from '@Assets/projects.json';
-import { ProjectInfo, InfoLeft, InfoRight, Container, Technologies, Technology, TilesContainer, LinkTile, ImageTile, VideoTile } from './styles';
 import { getProjectGifs, getProjectImages, getProjectVideo } from '@Utils/functions';
+import { useParams } from 'react-router-dom';
+import {
+  Container,
+  ImageTile,
+  InfoLeft,
+  InfoRight,
+  LinkTile,
+  ProjectInfo,
+  Technologies,
+  Technology,
+  TilesContainer,
+  VideoTile,
+} from './styles';
 
 const arrangeMediaAlternately = (images: string[], gifs: string[]): string[] => {
   let media: string[] = [];
@@ -9,7 +20,7 @@ const arrangeMediaAlternately = (images: string[], gifs: string[]): string[] => 
 
   for (let i = 0; i < maxLength; i++) {
     if (i < images.length) media.push(images[i]);
-    if (i < gifs.length) media.push(gifs[i]);    
+    if (i < gifs.length) media.push(gifs[i]);
   }
 
   return media;
@@ -42,7 +53,11 @@ const ProjectPage = () => {
       </ProjectInfo>
       <TilesContainer>
         {getProjectVideo(project.id) && <VideoTile src={getProjectVideo(project.id)} />}
-        {project.gameLink && <LinkTile to={project.gameLink}>Play now!</LinkTile>}
+        {project.gameLink && (
+          <LinkTile target="_blank" to={project.gameLink}>
+            Play now!
+          </LinkTile>
+        )}
         {media.map((mediaPath: string, index: number) => (
           <ImageTile key={index} src={mediaPath} alt={project.title} />
         ))}

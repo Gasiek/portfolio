@@ -1,6 +1,6 @@
-import { Project } from '@Utils/types';
-import { Tile, Overlay, Image, Title, Description } from './styles';
 import { getProjectThumbnail } from '@Utils/functions';
+import { Project } from '@Utils/types';
+import { Description, Image, Overlay, Tile, Title } from './styles';
 
 interface ProjectTileProps {
   project: Project;

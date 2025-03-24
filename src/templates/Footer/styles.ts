@@ -1,8 +1,8 @@
-import { styled } from "styled-components";
+import { styled } from 'styled-components';
 
 export const Container = styled.footer`
-    background-color: ${({ theme }) => theme.colors.dark.primary};
-    color: ${({ theme }) => theme.colors.white};
-    padding: 1rem;
-    text-align: center;
-    `;
+  background-color: ${({ theme }) => theme.colors.dark.primary};
+  color: ${({ theme }) => theme.colors.white};
+  padding: 2rem;
+  text-align: center;
+`;

@@ -1,8 +1,9 @@
-import { Link } from "react-router-dom";
-import { styled } from "styled-components";
+import { Link } from 'react-router-dom';
+import { styled } from 'styled-components';
 
 export const Container = styled.div`
-margin-top: 60px;`;
+  margin-top: 60px;
+`;
 
 export const ProjectInfo = styled.div`
   display: flex;
@@ -10,6 +11,10 @@ export const ProjectInfo = styled.div`
   margin: 8em 0 2em;
   padding: 4em 2em 0;
   min-height: 40vh;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 2em;
+  }
 `;
 
 export const InfoLeft = styled.div`
@@ -35,7 +40,7 @@ export const TilesContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 3em;
-  
+
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
   }

@@ -1,17 +1,13 @@
-import projects from "@Assets/projects.json";
-import ProjectTile from "./ProjectTile";
-import { CenteredHeader, Container, ProjectsContainer } from "./styles";
-import CoverPicture from "./CoverPicture";
+import About from './About';
+import CoverPicture from './CoverPicture';
+import Projects from './Projects';
+import { Container } from './styles';
 
 const Home = () => (
   <Container>
     <CoverPicture />
-    <CenteredHeader>Projects</CenteredHeader>
-    <ProjectsContainer>
-      {projects.map((project) => (
-        <ProjectTile key={project.id} project={project} />
-      ))}
-    </ProjectsContainer>
+    <About />
+    <Projects />
   </Container>
 );
 

@@ -1,4 +1,4 @@
-import { styled } from "styled-components";
+import { styled } from 'styled-components';
 
 export const Container = styled.div<{ bgimage: string }>`
   height: calc(100vh - 100px);
@@ -12,4 +12,7 @@ export const Container = styled.div<{ bgimage: string }>`
   font-size: 2rem;
   font-weight: bold;
   margin-top: 100px;
+  @media (max-width: 768px) {
+    background-position-x: 45%;
+  }
 `;
