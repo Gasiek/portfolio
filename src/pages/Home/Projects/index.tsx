@@ -5,17 +5,19 @@ import { CenteredHeader, PlatformLink, PlatformsContainer, ProjectsContainer } f
 
 const Projects = () => {
   const [projects, setProjects] = useState(projectsData);
-  const [platform, setPlatform] = useState<string>("All");
-  useEffect(() => {
-    setProjects(
-      projectsData.filter((project) => {
-        if (platform === "All") {
-          return true;
-        }
-        return project.platform === platform;
-      })
-    );
-  }, [platform]);
+const [platform, setPlatform] = useState<string>("All");
+
+useEffect(() => {
+  setProjects(
+    projectsData.filter((project) => {
+      if (platform === "All") {
+        return true;
+      }
+      return project.platform.includes(platform);
+    })
+  );
+}, [platform]);
+
   return (
     <>
       <CenteredHeader id="projects">Projects</CenteredHeader>
@@ -24,7 +26,8 @@ const Projects = () => {
         <PlatformLink onClick={()=>setPlatform("PC")}>PC</PlatformLink>
         <PlatformLink onClick={()=>setPlatform("XR")}>XR</PlatformLink>
         <PlatformLink onClick={()=>setPlatform("WebGL")}>WebGL</PlatformLink>
-        <PlatformLink onClick={()=>setPlatform("Android")}>Android</PlatformLink>
+        <PlatformLink onClick={()=>setPlatform("Mobile")}>Mobile</PlatformLink>
+        <PlatformLink onClick={()=>setPlatform("Other")}>Other</PlatformLink>
       </PlatformsContainer>
       <ProjectsContainer>
         {projects.map((project) => (

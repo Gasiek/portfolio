@@ -11,7 +11,7 @@ const ProjectTile = ({ project }: ProjectTileProps) => (
     <Image src={getProjectThumbnail(project.id)} alt={project.title} />
     <Overlay>
       <Title>{project.title}</Title>
-      <Description>{project.description}</Description>
+      <Description>{project.thumbnailDescription}</Description>
     </Overlay>
   </Tile>
 );

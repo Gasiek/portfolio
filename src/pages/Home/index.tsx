@@ -1,13 +1,17 @@
 import About from './About';
 import CoverPicture from './CoverPicture';
 import Projects from './Projects';
-import { Container } from './styles';
+import { Container, TopContainer, Wrapper } from './styles';
 
 const Home = () => (
   <Container>
-    <CoverPicture />
-    <About />
-    <Projects />
+    <Wrapper>
+      <TopContainer>
+        <CoverPicture />
+        <About />
+      </TopContainer>
+      <Projects />
+    </Wrapper>
   </Container>
 );
 

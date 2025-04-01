@@ -2,122 +2,187 @@
   {
     "id": "astroflap",
     "title": "Astroflap",
-    "platform": "WebGL",
-    "technologies": [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "WebGL"
-    ],
-    "description": "Astroflap is a classic arcade game in which the player takes on the role of an astronaut exploring caves on an unknown planet.",
-    "detailedDescription": "Astroflap is a classic arcade game in which the player takes on the role of an astronaut exploring caves on an unknown planet using a jet pack. Designed to be fun as well as challenging. Explore caves, collect diamonds. Perform stunts and avoid obstacles.",
+    "platform": ["WebGL", "Mobile"],
+    "technologies": ["HTML", "CSS", "JavaScript", "WebGL"],
+    "thumbnailDescription": "Astroflap is a classic arcade game in which the player takes on the role of an astronaut exploring caves on an unknown planet.",
+    "projectDescription": "Astroflap is a classic arcade game in which the player takes on the role of an astronaut exploring caves on an unknown planet using a jet pack. Designed to be fun as well as challenging. Explore caves, collect diamonds. Perform stunts and avoid obstacles.",
+    "technicalDescription": {
+      "descriptionText": "Developed as a small-scale arcade game with a focus on optimizing performance and maintaining fluid gameplay.",
+      "bulletPoints": [
+        "Optimized Performance: Implemented object pooling to reduce memory allocation overhead and improve frame rate stability.",
+        "Profiling & Debugging: Used Unity’s profiling tools to analyze and enhance performance, ensuring smooth gameplay.",
+        "Efficient Asset Use: Integrated pre-made assets from the Unity Asset Store to streamline development and focus on gameplay mechanics.",
+        "Compact but Polished: Designed with simplicity in mind, prioritizing responsive controls and replayability over advanced features."
+      ],
+      "results": "The game achieved a stable frame rate and smooth performance through object pooling and profiling techniques, making it a lightweight but engaging arcade experience.",
+      "tools": ["Unity", "C#", "Object Pooling", "Performance Profiling", "Asset Integration"]
+    },
     "gameLink": "https://oakgames.it/games/astroflap/"
   },
   {
     "id": "foxrunner",
     "title": "Fox Runner",
-    "platform": "WebGL",
-    "technologies": [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "WebGL"
-    ],
-    "description": "Fox Runner is a 3D platformer where the goal is to travel as far as possible, avoiding obstacles and collecting extra time by jumping over gates.",
-    "detailedDescription": "Fox runner is a platform game with 3D graphics, where the player's goal is to travel as much distance as possible. During gameplay, the player has to avoid obstacles and collect extra time by jumping over gates. The game engine generates a new route with each playthrough, making the game a completely new experience each time!",
+    "platform": ["WebGL", "Mobile", "PC"],
+    "technologies": ["HTML", "CSS", "JavaScript", "WebGL"],
+    "thumbnailDescription": "Fox Runner is a 3D platformer where the goal is to travel as far as possible, avoiding obstacles and collecting extra time by jumping over gates.",
+    "projectDescription": "Fox Runner is a 3D platform game where the player's goal is to travel as far as possible while avoiding obstacles and collecting extra time by jumping over gates. Each playthrough generates a new route, making every game session a unique experience.",
+    "technicalDescription": {
+      "descriptionText": "Developed as a dynamic platformer with motion capture integration and procedurally generated levels to create a unique and interactive gameplay experience.",
+      "bulletPoints": [
+        "Motion Capture Integration: Designed for play using the ZED motion capture camera, enabling real-world movement to control the character.",
+        "Obstacle Generation: Implemented object pooling for efficient and smooth obstacle generation, optimizing performance.",
+        "Web & Mobile Compatibility: Developed a WebGL version where player motion is simulated using arrow keys, and also released a mobile version on Google Play.",
+        "Endless Challenge: Features dynamic, procedurally generated obstacles to keep gameplay fresh and engaging."
+      ],
+      "results": "Successfully launched on WebGL and Google Play, providing players with an engaging, endlessly replayable platforming experience with both motion capture and traditional control options.",
+      "tools": [
+        "Unity3D",
+        "ZED Motion Capture",
+        "Object Pooling",
+        "WebGL",
+        "Game Design",
+        "Google Play"
+      ]
+    },
     "gameLink": "https://oakgames.it/games/foxrunner/"
   },
   {
     "id": "alien-defense",
-    "title": "Alien Defense",
-    "platform": "XR",
-    "technologies": [
-      "Unity",
-      "C#",
-      "VR"
-    ],
-    "description": "Alien Defence is a sci-fi arcade shooter where you battle waves of alien invaders to save humanity. Inspired by \"Tower Defense\" games, it offers exciting, story-driven missions.",
-    "detailedDescription": "The gameplay in Alien Defence aims to maintain the classic physicality of shooting in an arcade game. A Science Fiction themed game in which you travel through the galaxy, fight ruthless enemies and uncover dark secrets to save all of humanity. With a fascinating story and exciting missions, this game will draw you in from the very beginning. The gameplay is easy to learn and provides entertainment for hours. It is inspired by \"Tower Defense\" type games, where your task is to defend your planet from waves of invaders from outer space. ",
+    "title": "VR Alien Defense",
+    "platform": ["XR"],
+    "technologies": ["Unity", "C#", "VR"],
+    "thumbnailDescription": "Alien Defense is a sci-fi arcade shooter where you battle waves of alien invaders to save humanity. Inspired by \"Tower Defense\" games.",
+    "projectDescription": "Alien Defense is a VR shooter inspired by classic arcade and tower defense games. Players must grab weapons from the environment and defend themselves against relentless waves of alien invaders. Featuring a sci-fi setting the game offers action-packed entertainment.",
+    "technicalDescription": {
+      "descriptionText": "Developed as an immersive VR shooter where players engage in physical combat by grabbing weapons and fending off alien waves in a fully interactive environment.",
+      "bulletPoints": [
+        "Immersive Gameplay: Implemented realistic VR interactions, allowing players to physically pick up weapons and engage in combat.",
+        "Optimized Performance: Built using Unity's Universal Render Pipeline (URP) to enhance performance and maintain smooth gameplay.",
+        "Enemy Pathfinding: Utilized NavMesh components to create dynamic enemy movement and engaging combat scenarios.",
+        "Beta Testing & Deployment: The game is currently in beta on App Lab, with ongoing testing on the Oculus Quest 2 to refine user experience and performance."
+      ],
+      "results": "Successfully developed and optimized for the Oculus Quest 2, providing an immersive VR shooting experience with real-time enemy pathfinding and dynamic combat.",
+      "tools": ["Unity", "URP", "Oculus Quest 2", "NavMesh", "VR Development"]
+    },
     "gameLink": "https://www.meta.com/experiences/7935548316518766/"
   },
   {
     "id": "vr-juggling-simulator",
     "title": "VR Juggling Simulator",
-    "platform": "XR",
-    "technologies": [
-      "Unity",
-      "C#",
-      "VR",
-      "Meta Quest 2"
-    ],
-    "description": "VR Juggling Simulator helps users learn juggling with realistic physics, adjustable difficulty, and visual/audio guidance. It features slow motion and instant ball resets for a more engaging and accessible training experience.",
-    "detailedDescription": "VR Juggling Simulator is designed to teach juggling using realistic physics for accurate ball trajectories and collisions. It features adjustable difficulty levels, a progression system, and intelligent guidance with visual and audio cues to improve timing and positioning. The game includes a slow-motion mode for detailed analysis and an instant ball reset feature for continuous practice. Developed as part of a Master's thesis, the simulator was used in a study comparing VR and real-world training, showing that VR enhances engagement and builds foundational skills, even if initial real-world performance transfer is limited.",
+    "platform": ["XR"],
+    "technologies": ["Unity", "C#", "VR", "Meta Quest 2"],
+    "thumbnailDescription": "VR Juggling Simulator helps users learn juggling with realistic physics, adjustable difficulty, and visual/audio guidance. It features slow motion and instant ball resets for a more engaging and accessible training experience.",
+    "projectDescription": "VR Juggling Simulator is designed to teach juggling using realistic physics for accurate ball trajectories and collisions. It features adjustable difficulty levels, a progression system, and intelligent guidance with visual and audio cues to improve timing and positioning. The game includes a slow-motion mode for detailed analysis and an instant ball reset feature for continuous practice. Developed as part of a Master's thesis, the simulator was used in a study comparing VR and real-world training, showing that VR enhances engagement and builds foundational skills, even if initial real-world performance transfer is limited.",
+    "technicalDescription": {
+      "descriptionText": "Developed in Unity as part of my Master's thesis to explore motor skill acquisition and compare learning outcomes between VR and real-world training.",
+      "bulletPoints": [
+        "Realistic Physics: Designed robust physics for precise ball trajectories and collision handling.",
+        "Gamified Learning: Implemented adjustable difficulty levels, a progression system, and slow-motion functionality.",
+        "Intelligent Guidance: Integrated visual aids and audio cues to assist with proper timing and positioning.",
+        "Enhanced User Experience: Streamlined practice with features like an instant ball reset for continuous training."
+      ],
+      "results": "The simulator was used in a study showing that VR training increases engagement and builds foundational juggling skills, even if initial real-world performance transfer is limited.",
+      "tools": ["Unity", "C#", "Oculus Quest 2", "VR Interaction Design", "Physics Simulation"]
+    },
     "gameLink": ""
   },
   {
     "id": "once-upon-a-conquest",
     "title": "Once Upon a Conquest",
-    "platform": "PC",
-    "technologies": [
-      "Unity",
-      "C#"
-    ],
-    "description": "A hack-and-slash platformer where you play as the Overlord, wreaking havoc on a peaceful kingdom. It features destructible environments, dynamic combat, and Unity's New Input System.",
-    "detailedDescription": "A narrative-driven hack-and-slash platformer where players control the Overlord, destroying a peaceful kingdom with dynamic combat and destructible environments. The game utilizes Unity's New Input System for seamless gamepad and keyboard support, with advanced AI that includes enemy behaviors like patrolling, fear responses, and strategic attacks. Destructible environments are implemented with multiple levels of destruction, enhancing the immersive experience, while intuitive controls and responsive animations provide fluid combat flow and a polished user experience. The game's technical design focuses on creating an engaging and immersive world through robust mechanics and high-performance gameplay.",
+    "platform": ["PC"],
+    "technologies": ["Unity", "C#"],
+    "thumbnailDescription": "A hack-and-slash platformer where you play as the Overlord, wreaking havoc on a peaceful kingdom. It features destructible environments, dynamic combat, and Unity's New Input System.",
+    "projectDescription": "A narrative-driven hack-and-slash platformer where players control the Overlord, wreaking havoc on a peaceful kingdom with dynamic combat and destructible environments. The game features intuitive controls, fluid animations, and an engaging combat system that immerses players in its dark fantasy world.",
+    "technicalDescription": {
+      "descriptionText": "Developed to provide an immersive action-platforming experience with destructible environments, advanced enemy AI, and seamless control support.",
+      "bulletPoints": [
+        "Destructible Environments: Implemented multiple levels of destruction, allowing objects and buildings to shatter dynamically.",
+        "Dynamic Combat System: Designed light and heavy attack mechanics, enhanced by AI-driven enemy behaviors such as patrolling, fear responses, and strategic attacks.",
+        "Intuitive Controls: Built with Unity’s New Input System, ensuring smooth and responsive gameplay across both gamepad and keyboard setups.",
+        "Immersive UX: Developed responsive animations and visual cues to enhance combat flow and provide a polished player experience."
+      ],
+      "results": "Created a fast-paced, destructible hack-and-slash experience with advanced AI mechanics and intuitive controls, delivering a highly engaging and responsive gameplay experience.",
+      "tools": ["Unity", "C#", "New Input System", "Animation Systems", "AI Behavior Programming"]
+    },
     "gameLink": "https://dadiu.itch.io/once-upon-a-conquest"
   },
   {
     "id": "vr-fire-safety-training-simulation",
     "title": "VR fire safety training simulation",
-    "platform": "XR",
-    "technologies": [
-      "Unity",
-      "C#",
-      "VR",
-      "Meta Quest 2"
-    ],
-    "description": "The VR fire safety simulation lets users practice realistic fire-extinguishing actions in an immersive environment. Built with Unity and C#, it tracks performance and provides feedback to improve fire safety skills.",
-    "detailedDescription": "The VR fire safety training simulation offers an interactive and immersive experience, where users can perform realistic actions like grabbing a fire extinguisher, removing the safety pin, and extinguishing fires in a simulated room environment. Built using Unity and C#, the simulation incorporates performance tracking to monitor metrics such as task completion time and extinguisher usage, providing valuable insights into user efficiency. Detailed post-training feedback reports help users assess and improve their fire safety skills, while the immersive design ensures high engagement and practical learning. The project leverages VR interaction design and performance tracking systems to create an effective and engaging training tool.",
+    "platform": ["XR"],
+    "technologies": ["Unity", "C#", "VR", "Meta Quest 2"],
+    "thumbnailDescription": "The VR fire safety simulation lets users practice realistic fire-extinguishing actions in an immersive environment. Built with Unity and C#, it tracks performance and provides feedback to improve fire safety skills.",
+    "projectDescription": "The VR Fire Safety Training Simulation provides an interactive and immersive learning experience, allowing users to practice essential fire safety procedures in a controlled environment. Users can grab a fire extinguisher, remove the safety pin, and extinguish fires in a simulated room, enhancing both engagement and practical skill development.",
+    "technicalDescription": {
+      "descriptionText": "Developed as a realistic VR training tool to teach fire safety skills through interactive simulations, performance tracking, and detailed feedback systems.",
+      "bulletPoints": [
+        "Interactive Simulation: Designed realistic interactions, allowing users to grab an extinguisher, remove the safety pin, and extinguish fires.",
+        "Performance Tracking: Monitors key metrics such as task completion time and extinguisher usage to evaluate user efficiency.",
+        "Detailed Feedback System: Provides post-training performance reports to help users assess and improve their fire safety skills.",
+        "Immersive Experience: Developed a simulated room environment with high engagement factors to create a practical and effective training tool."
+      ],
+      "results": "Created an engaging VR-based fire safety training system that enhances learning retention through hands-on interaction and real-time performance tracking.",
+      "tools": ["Unity", "C#", "VR Interaction Design", "Performance Tracking Systems"]
+    },
     "gameLink": ""
   },
   {
     "id": "bedtime-bash",
     "title": "Bedtime Bash",
-    "platform": "PC",
-    "technologies": [
-      "Unity",
-      "C#"
-    ],
-    "description": "I led a team of three programmers in an 18-member group, building a Unity game with advanced AI, state machines, NavMesh navigation, and precise weapon mechanics.",
-    "detailedDescription": "This project highlights both my leadership and technical expertise, as I led a team of three programmers within an 18-member group. I managed task delegation, ensuring efficiency by assigning work based on team strengths and meeting deadlines. On the technical side, I developed advanced AI using a state machine pattern and integrated Unity's NavMesh for improved enemy navigation and behavior. Additionally, I refined weapon mechanics by aligning physical interactions with animations for a seamless player experience. Built in Unity with C#, the project demonstrates my skills in AI programming, gameplay mechanics, and team leadership.",
+    "platform": ["PC"],
+    "technologies": ["Unity", "C#"],
+    "thumbnailDescription": "I led a team of three programmers in an 18-member group, building a Unity game with advanced AI, state machines, NavMesh navigation, and precise weapon mechanics.",
+    "projectDescription": "This project showcases both my leadership and technical expertise, as I led a team of three programmers within an 18-member group. The game features advanced AI behavior, refined weapon mechanics, and optimized enemy navigation to deliver a seamless and engaging player experience.",
+    "technicalDescription": {
+      "descriptionText": "Developed in Unity, this project demonstrates my skills in AI programming, gameplay mechanics, and team leadership, ensuring both technical innovation and efficient team management.",
+      "bulletPoints": [
+        "Team Leadership: Managed a team of three programmers, delegating tasks based on strengths and ensuring deadlines were met.",
+        "Technical Challenges: Aligned physical weapon interactions with animations to create a cohesive and immersive player experience.",
+        "Enhanced AI: Implemented a state machine pattern for enemy behavior and leveraged Unity’s NavMesh for improved navigation and combat strategy."
+      ],
+      "results": "Successfully delivered a polished game with advanced AI and smooth gameplay mechanics while fostering an efficient and collaborative development environment.",
+      "tools": ["Unity", "C#", "NavMesh", "State Machine Programming", "Team Leadership"]
+    },
     "gameLink": ""
   },
   {
     "id": "towar-defense",
     "title": "TowAR Defense",
-    "platform": "XR",
-    "technologies": [
-      "Unity",
-      "C#",
-      "AR",
-      "Microsoft HoloLens"
-    ],
-    "description": "An AR tower defense game for HoloLens where players defend against spiders using spatial mapping and hand-tracked tower placement. Built with Unity and Blender.",
-    "detailedDescription": "This AR tower defense game for Microsoft HoloLens challenges players to defend their base against waves of attacking spiders using spatial mapping and interactive hand-tracked tower placement. Built in Unity, it leverages HoloLens' AR capabilities for real-world interaction, allowing players to position the game board on any surface. The project includes custom 3D models and animations created in Blender, enhancing the visual and gameplay experience. By integrating real-time spatial awareness, immersive mechanics, and interactive controls, the game pushes the boundaries of AR gaming and user engagement.",
+    "platform": ["XR"],
+    "technologies": ["Unity", "C#", "AR", "Microsoft HoloLens"],
+    "thumbnailDescription": "An AR tower defense game for HoloLens where players defend against spiders using spatial mapping and hand-tracked tower placement. Built with Unity and Blender.",
+    "projectDescription": "A tower defense-inspired game reimagined in augmented reality (AR) for the Microsoft HoloLens. Players must defend their base from waves of attacking spiders using interactive, hand-tracked tower placement and real-world spatial mapping.",
+    "technicalDescription": {
+      "descriptionText": "Developed in Unity, this AR game leverages HoloLens' spatial mapping and hand tracking to create an immersive tower defense experience with real-world interaction.",
+      "bulletPoints": [
+        "AR Integration: Utilized HoloLens spatial mapping to allow players to position the game board on any real-world surface.",
+        "Interactive Gameplay: Players manually place defensive towers using hand tracking, enhancing engagement and control.",
+        "3D Modeling and Animation: Designed and animated all 3D assets using Blender, improving the game's visual appeal and realism.",
+        "Immersive AR Experience: Fully optimized for AR gameplay, incorporating spatial awareness and real-time environmental interaction."
+      ],
+      "results": "Created an innovative AR gaming experience that blends real-world spatial interaction with strategic gameplay, pushing the boundaries of mixed reality gaming.",
+      "tools": ["HoloLens", "Unity", "AR Development", "Blender", "3D Modeling", "Animation"]
+    },
     "gameLink": ""
   },
   {
     "id": "smoke-fusion",
     "title": "Smoke Fusion",
-    "platform": "Android",
-    "technologies": [
-      "Unity",
-      "C#",
-      "RFID",
-      "Android"
-    ],
-    "description": "An interactive amusement park game that uses RFID cards to track player progress and encourage physical activity. Built with Unity and URP, it features glowing visuals, Android kiosk support, and an online test version.",
-    "detailedDescription": "This interactive game, designed for amusement parks, utilizes RFID technology to track players' progress and personalize their experience. Players use RFID cards to engage with interactive screens distributed throughout the park, encouraging physical activity and providing an engaging way to explore the area. Developed in Unity3D with the Universal Render Pipeline (URP), the game features custom shaders that create visually striking glowing effects, enhancing the immersive experience. Optimized for Android kiosks, the game runs seamlessly on large interactive screens, offering a user-friendly interface. Additionally, an online version is available for testing and simulating the experience, allowing players to preview the fun before visiting the amusement park.",
+    "platform": ["Other", "WebGL"],
+    "technologies": ["Unity", "C#", "RFID", "Android", "WebGL"],
+    "thumbnailDescription": "An interactive amusement park game that uses RFID cards to track player progress and encourage physical activity. Built with Unity and URP, it features glowing visuals, Android kiosk support, and an online test version.",
+    "projectDescription": "An interactive game designed for amusement parks, engaging visitors—especially children—by encouraging physical activity through interactive screens placed throughout the park. Players use RFID cards to track their progress and personalize their experience, making exploration more fun and engaging.",
+    "technicalDescription": {
+      "descriptionText": "Developed in Unity3D with RFID integration to create an engaging and personalized interactive experience, optimized for amusement parks and Android kiosks.",
+      "bulletPoints": [
+        "RFID Integration: Uses RFID cards to identify players, track progress, and personalize gameplay.",
+        "Immersive Graphics: Built with Unity3D using the Universal Render Pipeline (URP) and custom shaders to create glowing, visually striking effects.",
+        "Android Kiosk Optimization: Designed for seamless operation on large interactive Android-based screens.",
+        "Test Version Available: Developed an online version for testing and simulating the experience before visiting the amusement park."
+      ],
+      "results": "Created a dynamic and engaging amusement park experience that combines interactive screens, RFID technology, and optimized graphics for maximum immersion and fun.",
+      "tools": ["Unity3D", "URP", "RFID Integration", "Custom Shaders", "Android Development"]
+    },
     "gameLink": "https://oakgames.it/games/smokefusion/"
   }
 ]

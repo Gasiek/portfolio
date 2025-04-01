@@ -22,8 +22,9 @@ export const PlatformsContainer = styled.div`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 32px;
-  margin-top: 1em;
+  column-gap: 32px;
+  row-gap: 8px;
+  margin: 1em 1em 0;
 `;
 
 export const PlatformLink = styled.button`

@@ -1,5 +1,5 @@
 import projects from '@Assets/projects.json';
-import { getProjectGifs, getProjectImages, getProjectVideo } from '@Utils/functions';
+import { getProjectGifs, getProjectImages } from '@Utils/functions';
 import { useParams } from 'react-router-dom';
 import {
   Container,
@@ -8,21 +8,23 @@ import {
   InfoRight,
   LinkTile,
   ProjectInfo,
+  RowContainer,
+  TechnicalDescriptionContainer,
   Technologies,
   Technology,
   TilesContainer,
-  VideoTile,
+  Tools,
+  Wrapper,
 } from './styles';
 
 const arrangeMediaAlternately = (images: string[], gifs: string[]): string[] => {
   let media: string[] = [];
-  let maxLength = Math.max(images.length, gifs.length);
+  const maxLength = Math.max(images.length, gifs.length);
 
   for (let i = 0; i < maxLength; i++) {
     if (i < images.length) media.push(images[i]);
     if (i < gifs.length) media.push(gifs[i]);
   }
-
   return media;
 };
 
@@ -36,32 +38,63 @@ const ProjectPage = () => {
   const gifs = getProjectGifs(project.id);
   const media = arrangeMediaAlternately(images, gifs);
 
+  const firstRowImageCount = project.gameLink ? 2 : 3;
+  const firstRowMedia = media.slice(0, firstRowImageCount);
+  const remainingMedia = media.slice(firstRowImageCount);
+
   return (
     <Container>
-      <ProjectInfo>
-        <InfoLeft>
-          <h1>{project.title}</h1>
-          <Technologies>
-            {project.technologies.map((tech: string) => (
-              <Technology key={tech}>{tech}</Technology>
+      <Wrapper>
+        <ProjectInfo>
+          <InfoLeft>
+            <h1>{project.title}</h1>
+            <Technologies>
+              {project.technologies.map((tech: string) => (
+                <Technology key={tech}>{tech}</Technology>
+              ))}
+            </Technologies>
+          </InfoLeft>
+          <InfoRight>
+            <p>{project.projectDescription}</p>
+          </InfoRight>
+        </ProjectInfo>
+
+        <TilesContainer>
+          <RowContainer>
+            {project.gameLink && (
+              <LinkTile target="_blank" to={project.gameLink}>
+                Play now!
+              </LinkTile>
+            )}
+            {firstRowMedia.map((mediaPath: string, index: number) => (
+              <ImageTile key={index} src={mediaPath} alt={project.title} />
             ))}
-          </Technologies>
-        </InfoLeft>
-        <InfoRight>
-          <p>{project.detailedDescription}</p>
-        </InfoRight>
-      </ProjectInfo>
-      <TilesContainer>
-        {getProjectVideo(project.id) && <VideoTile src={getProjectVideo(project.id)} />}
-        {project.gameLink && (
-          <LinkTile target="_blank" to={project.gameLink}>
-            Play now!
-          </LinkTile>
-        )}
-        {media.map((mediaPath: string, index: number) => (
-          <ImageTile key={index} src={mediaPath} alt={project.title} />
-        ))}
-      </TilesContainer>
+          </RowContainer>
+
+          <TechnicalDescriptionContainer>
+            <div>
+              <p>{project.technicalDescription.descriptionText}</p>
+              <ul>
+                {project.technicalDescription.bulletPoints.map((point: string, index: number) => (
+                  <li key={index}>{point}</li>
+                ))}
+              </ul>
+            </div>
+            <p>
+              <strong>Results:</strong> {project.technicalDescription.results}
+            </p>
+            <Tools>
+              <strong>Tools/Skills:</strong> {project.technicalDescription.tools.join(' | ')}
+            </Tools>
+          </TechnicalDescriptionContainer>
+
+          <RowContainer>
+            {remainingMedia.map((mediaPath: string, index: number) => (
+              <ImageTile key={index} src={mediaPath} alt={project.title} />
+            ))}
+          </RowContainer>
+        </TilesContainer>
+      </Wrapper>
     </Container>
   );
 };
