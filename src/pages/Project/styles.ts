@@ -73,6 +73,10 @@ export const TechnicalDescriptionContainer = styled.div`
       margin-bottom: 0.6em;
       text-align: justify;
     }
+    @media (max-width: 768px) {
+      margin-left: 1.5em;
+      margin-right: 1em;
+    }
   }
   strong {
     font-weight: bold;

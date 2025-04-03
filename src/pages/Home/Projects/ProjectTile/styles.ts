@@ -15,6 +15,7 @@ export const Overlay = styled.div`
   justify-content: center;
   opacity: 0;
   transition: opacity 0.3s ease;
+  aspect-ratio: 16 / 9;
   &:hover {
     opacity: 1;
   }
@@ -23,7 +24,6 @@ export const Overlay = styled.div`
 export const Tile = styled(Link)`
   position: relative;
   width: 100%;
-  height: 200px;
   display: block;
   overflow: hidden;
   border-radius: 2px;
