@@ -37,7 +37,7 @@ export const Li = styled.li`
 export const StyledNavLink = styled(NavLink)`
   color: ${({ theme }) => theme.colors.light.primary};
   font-size: 18px;
-  font-weight: 400;
+  font-weight: bold;
 `;
 
 export const NavLinkLogo = styled(NavLink)`

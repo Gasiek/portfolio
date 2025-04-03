@@ -9,7 +9,7 @@ export const Overlay = styled.div`
   width: 100%;
   height: 100%;
   background: ${({ theme }) => theme.colors.dark.secondary};
-  color: ${({ theme }) => theme.colors.light.primary};
+  color: ${({ theme }) => theme.colors.light.secondary};
   display: flex;
   flex-direction: column;
   justify-content: center;

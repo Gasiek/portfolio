@@ -7,8 +7,8 @@ export default {
       secondary: '#25023C',
     },
     light: {
-      primary: '#A91079',
-      secondary: '#F806CC',
+      primary: '#bf1289',
+      secondary: '#f009ae',
     },
     white: '#F5F5F5',
     black: '000',

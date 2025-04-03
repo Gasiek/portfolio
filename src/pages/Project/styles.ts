@@ -111,6 +111,10 @@ export const LinkTile = styled(Link)`
   width: 100%;
   aspect-ratio: 16 / 9;
   border-radius: 12px;
+  &:hover {
+    background-color: ${({ theme }) => theme.colors.light.secondary};
+    color: ${({ theme }) => theme.colors.dark.primary};
+  }
 `;
 
 export const Tools = styled.p`
