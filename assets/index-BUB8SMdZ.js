@@ -89,7 +89,7 @@ Please change the parent <Route path="${B}"> to <Route path="${B==="/"?"*":`${B}
   width: 100%;
   height: 100%;
   background: ${({theme:u})=>u.colors.dark.secondary};
-  color: ${({theme:u})=>u.colors.light.primary};
+  color: ${({theme:u})=>u.colors.light.secondary};
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -256,6 +256,10 @@ Please change the parent <Route path="${B}"> to <Route path="${B==="/"?"*":`${B}
   width: 100%;
   aspect-ratio: 16 / 9;
   border-radius: 12px;
+  &:hover {
+    background-color: ${({theme:u})=>u.colors.light.secondary};
+    color: ${({theme:u})=>u.colors.dark.primary};
+  }
 `,Fb=ie.p`
   color: ${({theme:u})=>u.colors.light.primary};
   font-weight: bold;
@@ -297,7 +301,7 @@ Please change the parent <Route path="${B}"> to <Route path="${B==="/"?"*":`${B}
 `,nS=ie(ar)`
   color: ${({theme:u})=>u.colors.light.primary};
   font-size: 18px;
-  font-weight: 400;
+  font-weight: bold;
 `,uS=ie(ar)`
   height: 100px;
 `,iS=ie.h1`
@@ -369,4 +373,4 @@ Please change the parent <Route path="${B}"> to <Route path="${B==="/"?"*":`${B}
             color: ${({theme:u})=>u.colors.light.secondary};
         }
     }
- `,fS={borderRadius:"5px",colors:{dark:{primary:"#19171F",secondary:"#25023C"},light:{primary:"#A91079",secondary:"#F806CC"},white:"#F5F5F5",black:"000"}},dS=()=>X.jsxs(Cv,{theme:fS,children:[X.jsx(sS,{}),X.jsxs(vb,{children:[X.jsx(oS,{}),X.jsx(cS,{}),X.jsxs(J1,{children:[X.jsx(Ho,{path:"/",element:X.jsx(Gb,{})}),X.jsx(Ho,{path:"/projects/:id",element:X.jsx(Ib,{})})]}),X.jsx(tS,{})]})]});Uy.createRoot(document.getElementById("root")).render(X.jsx(j.StrictMode,{children:X.jsx(dS,{})}));
+ `,fS={borderRadius:"5px",colors:{dark:{primary:"#19171F",secondary:"#25023C"},light:{primary:"#bf1289",secondary:"#f009ae"},white:"#F5F5F5",black:"000"}},dS=()=>X.jsxs(Cv,{theme:fS,children:[X.jsx(sS,{}),X.jsxs(vb,{children:[X.jsx(oS,{}),X.jsx(cS,{}),X.jsxs(J1,{children:[X.jsx(Ho,{path:"/",element:X.jsx(Gb,{})}),X.jsx(Ho,{path:"/projects/:id",element:X.jsx(Ib,{})})]}),X.jsx(tS,{})]})]});Uy.createRoot(document.getElementById("root")).render(X.jsx(j.StrictMode,{children:X.jsx(dS,{})}));
