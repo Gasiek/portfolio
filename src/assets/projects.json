@@ -1,5 +1,45 @@
 [
   {
+    "id": "vr-juggling-simulator",
+    "title": "VR Juggling Simulator",
+    "platform": ["XR"],
+    "technologies": ["Unity", "C#", "VR", "Meta Quest 2"],
+    "thumbnailDescription": "VR Juggling Simulator helps users learn juggling with realistic physics, adjustable difficulty, and visual/audio guidance. It features slow motion and instant ball resets for a more engaging and accessible training experience.",
+    "projectDescription": "VR Juggling Simulator is designed to teach juggling using realistic physics for accurate ball trajectories and collisions. It features adjustable difficulty levels, a progression system, and intelligent guidance with visual and audio cues to improve timing and positioning. The game includes a slow-motion mode for detailed analysis and an instant ball reset feature for continuous practice. Developed as part of a Master's thesis, the simulator was used in a study comparing VR and real-world training, showing that VR enhances engagement and builds foundational skills, even if initial real-world performance transfer is limited.",
+    "technicalDescription": {
+      "descriptionText": "Developed in Unity as part of my Master's thesis to explore motor skill acquisition and compare learning outcomes between VR and real-world training.",
+      "bulletPoints": [
+        "Realistic Physics: Designed robust physics for precise ball trajectories and collision handling.",
+        "Gamified Learning: Implemented adjustable difficulty levels, a progression system, and slow-motion functionality.",
+        "Intelligent Guidance: Integrated visual aids and audio cues to assist with proper timing and positioning.",
+        "Enhanced User Experience: Streamlined practice with features like an instant ball reset for continuous training."
+      ],
+      "results": "The simulator was used in a study showing that VR training increases engagement and builds foundational juggling skills, even if initial real-world performance transfer is limited.",
+      "tools": ["Unity", "C#", "Oculus Quest 2", "VR Interaction Design", "Physics Simulation"]
+    },
+    "gameLink": ""
+  },
+  {
+    "id": "once-upon-a-conquest",
+    "title": "Once Upon a Conquest",
+    "platform": ["PC"],
+    "technologies": ["Unity", "C#"],
+    "thumbnailDescription": "A hack-and-slash platformer where you play as the Overlord, wreaking havoc on a peaceful kingdom. It features destructible environments, dynamic combat, and Unity's New Input System.",
+    "projectDescription": "A narrative-driven hack-and-slash platformer where players control the Overlord, wreaking havoc on a peaceful kingdom with dynamic combat and destructible environments. The game features intuitive controls, fluid animations, and an engaging combat system that immerses players in its dark fantasy world.",
+    "technicalDescription": {
+      "descriptionText": "Developed to provide an immersive action-platforming experience with destructible environments, advanced enemy AI, and seamless control support.",
+      "bulletPoints": [
+        "Destructible Environments: Implemented multiple levels of destruction, allowing objects and buildings to shatter dynamically.",
+        "Dynamic Combat System: Designed light and heavy attack mechanics, enhanced by AI-driven enemy behaviors such as patrolling, fear responses, and strategic attacks.",
+        "Intuitive Controls: Built with Unity’s New Input System, ensuring smooth and responsive gameplay across both gamepad and keyboard setups.",
+        "Immersive UX: Developed responsive animations and visual cues to enhance combat flow and provide a polished player experience."
+      ],
+      "results": "Created a fast-paced, destructible hack-and-slash experience with advanced AI mechanics and intuitive controls, delivering a highly engaging and responsive gameplay experience.",
+      "tools": ["Unity", "C#", "New Input System", "Animation Systems", "AI Behavior Programming"]
+    },
+    "gameLink": "https://dadiu.itch.io/once-upon-a-conquest"
+  },
+  {
     "id": "astroflap",
     "title": "Astroflap",
     "platform": ["WebGL", "Mobile"],
@@ -18,6 +58,26 @@
       "tools": ["Unity", "C#", "Object Pooling", "Performance Profiling", "Asset Integration"]
     },
     "gameLink": "https://oakgames.it/games/astroflap/"
+  },
+  {
+    "id": "vr-fire-safety-training-simulation",
+    "title": "VR fire safety training simulation",
+    "platform": ["XR"],
+    "technologies": ["Unity", "C#", "VR", "Meta Quest 2"],
+    "thumbnailDescription": "The VR fire safety simulation lets users practice realistic fire-extinguishing actions in an immersive environment. Built with Unity and C#, it tracks performance and provides feedback to improve fire safety skills.",
+    "projectDescription": "The VR Fire Safety Training Simulation provides an interactive and immersive learning experience, allowing users to practice essential fire safety procedures in a controlled environment. Users can grab a fire extinguisher, remove the safety pin, and extinguish fires in a simulated room, enhancing both engagement and practical skill development.",
+    "technicalDescription": {
+      "descriptionText": "Developed as a realistic VR training tool to teach fire safety skills through interactive simulations, performance tracking, and detailed feedback systems.",
+      "bulletPoints": [
+        "Interactive Simulation: Designed realistic interactions, allowing users to grab an extinguisher, remove the safety pin, and extinguish fires.",
+        "Performance Tracking: Monitors key metrics such as task completion time and extinguisher usage to evaluate user efficiency.",
+        "Detailed Feedback System: Provides post-training performance reports to help users assess and improve their fire safety skills.",
+        "Immersive Experience: Developed a simulated room environment with high engagement factors to create a practical and effective training tool."
+      ],
+      "results": "Created an engaging VR-based fire safety training system that enhances learning retention through hands-on interaction and real-time performance tracking.",
+      "tools": ["Unity", "C#", "VR Interaction Design", "Performance Tracking Systems"]
+    },
+    "gameLink": ""
   },
   {
     "id": "foxrunner",
@@ -65,66 +125,6 @@
       "tools": ["Unity", "URP", "Oculus Quest 2", "NavMesh", "VR Development"]
     },
     "gameLink": "https://www.meta.com/experiences/7935548316518766/"
-  },
-  {
-    "id": "vr-juggling-simulator",
-    "title": "VR Juggling Simulator",
-    "platform": ["XR"],
-    "technologies": ["Unity", "C#", "VR", "Meta Quest 2"],
-    "thumbnailDescription": "VR Juggling Simulator helps users learn juggling with realistic physics, adjustable difficulty, and visual/audio guidance. It features slow motion and instant ball resets for a more engaging and accessible training experience.",
-    "projectDescription": "VR Juggling Simulator is designed to teach juggling using realistic physics for accurate ball trajectories and collisions. It features adjustable difficulty levels, a progression system, and intelligent guidance with visual and audio cues to improve timing and positioning. The game includes a slow-motion mode for detailed analysis and an instant ball reset feature for continuous practice. Developed as part of a Master's thesis, the simulator was used in a study comparing VR and real-world training, showing that VR enhances engagement and builds foundational skills, even if initial real-world performance transfer is limited.",
-    "technicalDescription": {
-      "descriptionText": "Developed in Unity as part of my Master's thesis to explore motor skill acquisition and compare learning outcomes between VR and real-world training.",
-      "bulletPoints": [
-        "Realistic Physics: Designed robust physics for precise ball trajectories and collision handling.",
-        "Gamified Learning: Implemented adjustable difficulty levels, a progression system, and slow-motion functionality.",
-        "Intelligent Guidance: Integrated visual aids and audio cues to assist with proper timing and positioning.",
-        "Enhanced User Experience: Streamlined practice with features like an instant ball reset for continuous training."
-      ],
-      "results": "The simulator was used in a study showing that VR training increases engagement and builds foundational juggling skills, even if initial real-world performance transfer is limited.",
-      "tools": ["Unity", "C#", "Oculus Quest 2", "VR Interaction Design", "Physics Simulation"]
-    },
-    "gameLink": ""
-  },
-  {
-    "id": "once-upon-a-conquest",
-    "title": "Once Upon a Conquest",
-    "platform": ["PC"],
-    "technologies": ["Unity", "C#"],
-    "thumbnailDescription": "A hack-and-slash platformer where you play as the Overlord, wreaking havoc on a peaceful kingdom. It features destructible environments, dynamic combat, and Unity's New Input System.",
-    "projectDescription": "A narrative-driven hack-and-slash platformer where players control the Overlord, wreaking havoc on a peaceful kingdom with dynamic combat and destructible environments. The game features intuitive controls, fluid animations, and an engaging combat system that immerses players in its dark fantasy world.",
-    "technicalDescription": {
-      "descriptionText": "Developed to provide an immersive action-platforming experience with destructible environments, advanced enemy AI, and seamless control support.",
-      "bulletPoints": [
-        "Destructible Environments: Implemented multiple levels of destruction, allowing objects and buildings to shatter dynamically.",
-        "Dynamic Combat System: Designed light and heavy attack mechanics, enhanced by AI-driven enemy behaviors such as patrolling, fear responses, and strategic attacks.",
-        "Intuitive Controls: Built with Unity’s New Input System, ensuring smooth and responsive gameplay across both gamepad and keyboard setups.",
-        "Immersive UX: Developed responsive animations and visual cues to enhance combat flow and provide a polished player experience."
-      ],
-      "results": "Created a fast-paced, destructible hack-and-slash experience with advanced AI mechanics and intuitive controls, delivering a highly engaging and responsive gameplay experience.",
-      "tools": ["Unity", "C#", "New Input System", "Animation Systems", "AI Behavior Programming"]
-    },
-    "gameLink": "https://dadiu.itch.io/once-upon-a-conquest"
-  },
-  {
-    "id": "vr-fire-safety-training-simulation",
-    "title": "VR fire safety training simulation",
-    "platform": ["XR"],
-    "technologies": ["Unity", "C#", "VR", "Meta Quest 2"],
-    "thumbnailDescription": "The VR fire safety simulation lets users practice realistic fire-extinguishing actions in an immersive environment. Built with Unity and C#, it tracks performance and provides feedback to improve fire safety skills.",
-    "projectDescription": "The VR Fire Safety Training Simulation provides an interactive and immersive learning experience, allowing users to practice essential fire safety procedures in a controlled environment. Users can grab a fire extinguisher, remove the safety pin, and extinguish fires in a simulated room, enhancing both engagement and practical skill development.",
-    "technicalDescription": {
-      "descriptionText": "Developed as a realistic VR training tool to teach fire safety skills through interactive simulations, performance tracking, and detailed feedback systems.",
-      "bulletPoints": [
-        "Interactive Simulation: Designed realistic interactions, allowing users to grab an extinguisher, remove the safety pin, and extinguish fires.",
-        "Performance Tracking: Monitors key metrics such as task completion time and extinguisher usage to evaluate user efficiency.",
-        "Detailed Feedback System: Provides post-training performance reports to help users assess and improve their fire safety skills.",
-        "Immersive Experience: Developed a simulated room environment with high engagement factors to create a practical and effective training tool."
-      ],
-      "results": "Created an engaging VR-based fire safety training system that enhances learning retention through hands-on interaction and real-time performance tracking.",
-      "tools": ["Unity", "C#", "VR Interaction Design", "Performance Tracking Systems"]
-    },
-    "gameLink": ""
   },
   {
     "id": "bedtime-bash",
